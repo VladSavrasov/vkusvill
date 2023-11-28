@@ -152,7 +152,8 @@ ____
 <p align="center">
 <img title="Selenoid Video" "images/video/07e51999ac3cd456b9ee34c7c77ba08d.mp4" width="550" height="350"  alt="video">   
 </p>  
-https://github.com/VladSavrasov/vkusvill/issues/2#issue-2014244647
+https://github.com/VladSavrasov/vkusvill/issues/video
+video
 
 <p align="center">
 <img title="Selenoid Video" "https://github.com/VladSavrasov/vkusvill/issues/2#issue-2014244647"   alt="video">   
