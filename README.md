@@ -149,13 +149,10 @@ ____
 ## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
 ____
 
-
-
-
 <p align="center">
 <img title="Selenoid Video" src="images/video/07e51999ac3cd456b9ee34c7c77ba08d.mp4" width="550" height="350"  alt="video">   
 </p>  
 <p align="center">
 <img title="Selenoid Video" [src="images/video/07e51999ac3cd456b9ee34c7c77ba08d.mp4](https://github.com/VladSavrasov/vkusvill/assets/113340472/25169e7c-6ef7-46f7-8aef-2a09133c9301)" width="550" height="350"  alt="video">   
 </p>
-
+https://github.com/VladSavrasov/vkusvill/assets/113340472/25169e7c-6ef7-46f7-8aef-2a09133c9301
