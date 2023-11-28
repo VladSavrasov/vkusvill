@@ -155,4 +155,4 @@ ____
 <p align="center">
 <img title="Selenoid Video" [src="images/video/07e51999ac3cd456b9ee34c7c77ba08d.mp4](https://github.com/VladSavrasov/vkusvill/assets/113340472/425bdae2-ceae-40df-b17a-95e95e5fb7ff)" width="550" height="350"  alt="video">   
 </p>
-https://github.com/VladSavrasov/vkusvill/assets/113340472/25169e7c-6ef7-46f7-8aef-2a09133c9301
+https://github.com/VladSavrasov/vkusvill/issues/1  https://github.com/VladSavrasov/vkusvill/assets/113340472/425bdae2-ceae-40df-b17a-95e95e5fb7ff
