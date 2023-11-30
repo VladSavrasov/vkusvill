@@ -1,56 +1,52 @@
-import Steps.MainPageStep;
+import org.junit.jupiter.api.Test;
+import pages.MainPage;
+import steps.Assertion;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 public class VkusvilTest extends BaseTest {
-    MainPageStep mainPageStep = new MainPageStep();
+    Assertion assertion = new Assertion();
+    MainPage mainPage = new MainPage();
 
     @DisplayName("проверить работу попапа 'Меню'")
-    @ParameterizedTest
-    @CsvSource("Медиа")
+    @Test
     @Tags({@Tag("High"), @Tag("web")})
-    void menuPopupCheck(String value) {
-        mainPageStep.clickMenu();
-        mainPageStep.assertionStep(value);
+    void menuPopupCheck() {
+        mainPage.clickMenu();
+        assertion.textExist("Медиа");
     }
 
     @DisplayName("проверить работу попапа 'Каталог'")
-    @ParameterizedTest
-    @CsvSource("Новинки")
+    @Test
     @Tags({@Tag("High"), @Tag("web")})
-    void catalogPopupCheck(String value) {
-        mainPageStep.clickCatalog();
-        mainPageStep.clickNewProducts();
-        mainPageStep.assertionStep(value);
+    void catalogPopupCheck() {
+        mainPage.hoverCatalog();
+        mainPage.clickNewProducts();
+        assertion.textExist("Новинки");
     }
 
     @DisplayName("проверить переход на страницу рецептов")
-    @ParameterizedTest
-    @CsvSource("Рецепты")
+    @Test
     @Tags({@Tag("Medium"), @Tag("web")})
-    void recipesPageCheck(String value) {
-        mainPageStep.clickRecypes();
-        mainPageStep.assertionStep(value);
+    void recipesPageCheck() {
+        mainPage.clickRecypes();
+        assertion.textExist("Рецепты");
     }
 
     @DisplayName("проверить переход на страницу вакансий")
-    @ParameterizedTest
-    @CsvSource("Работа")
+    @Test
     @Tags({@Tag("High"), @Tag("web")})
-    void vacancysPageCheck(String value) {
-        mainPageStep.clickVacancys();
-        mainPageStep.assertionStep(value);
+    void vacancysPageCheck() {
+        mainPage.clickVacancys();
+        assertion.textExist("Работа");
     }
 
     @DisplayName("Проверить переход в корзину")
-    @ParameterizedTest
-    @CsvSource("Корзина")
+    @Test
     @Tags({@Tag("Blocker"), @Tag("web")})
-    void cartPageCheck(String value) {
-        mainPageStep.clickCart();
-        mainPageStep.assertionStep(value);
+    void cartPageCheck() {
+        mainPage.clickCart();
+        assertion.textExist("Корзина");
     }
 }

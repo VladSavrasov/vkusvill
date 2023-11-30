@@ -86,10 +86,10 @@ gradle clean test
 ***Удалённый запуск через Jenkins:***
 ```bash  
 clean
-${TEST_RUN}
--Dbrowser=${BROWSER}
--DbrowserVersion=${VERSION}
--DbrowserSize=${SIZE}
+"${TEST_RUN}"
+"-Dbrowser=${BROWSER}"
+"-DbrowserVersion=${VERSION}"
+"-DbrowserSize=${SIZE}"
 "-DremoteUrl=${REMOTEURL}"
 ```
 ___
@@ -112,7 +112,7 @@ ___
 ### *Графики*
 
   <p align="center">  
-<img title="Allure Graphics" src="images/screen/allure_graths.bmp" width="850">
+<img title="Allure Graphics" src="images/screen/allure_graths.png" width="850">
 
 <img title="Allure Graphics" src="images/screen/graphs.png" width="850">  
 </p>
