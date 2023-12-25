@@ -29,23 +29,20 @@ compileTestJava {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
-    testImplementation 'com.codeborne:selenide:6.17.0'
-    testImplementation 'io.qameta.allure:allure-selenide:2.24.0'
-    testImplementation 'org.slf4j:slf4j-simple:2.0.9'
-    testImplementation 'org.testng:testng:7.1.0'
+    testImplementation('org.junit.jupiter:junit-jupiter:5.10.0',
+            'com.codeborne:selenide:6.19.0',
+            'io.qameta.allure:allure-selenide:2.24.0',
+            'org.slf4j:slf4j-simple:2.0.9',
+            'org.aeonbits.owner:owner:1.0.4')
 }
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
-}
 
-task highPriority_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("High")
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
     }
-}
-
-test {
-    useJUnitPlatform()
 }

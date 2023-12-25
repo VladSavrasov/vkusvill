@@ -9,6 +9,6 @@ build/
 *.iml
 *.ipr
 *.log
-*.gradlew
-*.gradlew.bat
-*.settings.gradle
+.gradlew
+.gradlew.bat
+.settings.gradle
